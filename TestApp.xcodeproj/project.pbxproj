@@ -29,9 +29,27 @@
 		6811FD3F2E3A3B1E0041807A /* TestAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		59DAE29F2EE8AC5A0037A9EF /* Exceptions for "TestApp" folder in "TestAppTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				API/APIClient.swift,
+				API/HTTPClient.swift,
+				API/HTTPMethod.swift,
+				API/URLSessionHTTPClient.swift,
+				API/URLSessionProtocol.swift,
+				Model/CharacterResponse.swift,
+			);
+			target = 6811FD342E3A3B1E0041807A /* TestAppTests */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		6811FD2A2E3A3B1C0041807A /* TestApp */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				59DAE29F2EE8AC5A0037A9EF /* Exceptions for "TestApp" folder in "TestAppTests" target */,
+			);
 			path = TestApp;
 			sourceTree = "<group>";
 		};
