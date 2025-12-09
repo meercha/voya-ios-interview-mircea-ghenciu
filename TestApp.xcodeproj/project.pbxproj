@@ -34,6 +34,7 @@
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				API/APIClient.swift,
+				API/ApiConstants.swift,
 				API/HTTPClient.swift,
 				API/HTTPMethod.swift,
 				API/URLSessionHTTPClient.swift,

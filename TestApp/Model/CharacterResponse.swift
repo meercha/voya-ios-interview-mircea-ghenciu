@@ -17,7 +17,7 @@ struct PageInfo: Codable {
     let prev: String?
 }
 
-struct Character: Codable {
+struct Character: Codable, Identifiable {
     let id: Int
     let name: String
     let species: String
@@ -25,6 +25,12 @@ struct Character: Codable {
     let type: String
     let origin: LocationReference
     let location: LocationReference
+}
+
+extension Character: Equatable {
+	static func == (lhs: Character, rhs: Character) -> Bool {
+		lhs.id == rhs.id
+	}
 }
 
 struct LocationReference: Codable {
